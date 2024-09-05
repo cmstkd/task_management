@@ -1,0 +1,41 @@
+<!-- templates/tasks/task_detail_public.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Detail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        .task-detail {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .task-detail p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="task-detail">
+        <h1>Task Detail</h1>
+        <p><strong>Name:</strong> {{ task.name }}</p>
+        <p><strong>Details:</strong> {{ task.details }}</p>
+        <p><strong>Status:</strong> {{ task.status }}</p>
+        <p><strong>Customer Mobile:</strong> {{ task.customer_mobile }}</p>
+        <p><strong>Created At:</strong> {{ task.created_at }}</p>
+    </div>
+</body>
+</html>

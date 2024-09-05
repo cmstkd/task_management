@@ -1,0 +1,6 @@
+<!-- templates/generate_and_upload_pdf.html -->
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Upload PDF</button>
+</form>
