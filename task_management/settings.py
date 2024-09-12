@@ -133,3 +133,4 @@ MSG91_AUTH_KEY = 'your_msg91_auth_key'
 # settings.py
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+ALLOWED_HOSTS = ['43.204.70.190', 'www.solviko.site']
